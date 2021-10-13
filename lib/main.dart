@@ -1,11 +1,13 @@
 import 'package:dp/facade_pattern/firebase_notification_service.dart';
+import 'package:dp/facade_pattern/onesignal_notification_service.dart';
 import 'package:flutter/material.dart';
 
 import 'facade_pattern/notification_service.dart';
 
 void main() {
   //TODO user
-  NotificationService service = FirebaseNotificationService();
+  //NotificationService service = FirebaseNotificationService();
+  NotificationService service = OneSignalNotificationService();
   service.setup();
   service.getToken();
 

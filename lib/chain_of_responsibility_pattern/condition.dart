@@ -5,8 +5,8 @@ import 'input.dart';
 
 // If user have quantity > minQuantity. So this quantity match this condition and they can get discount
 class Condition {
-  final double minQuantity;
-  final double discountPercent;
+  final double minQuantity; // 5
+  final double discountPercent; // 10%
 
   Condition({required this.minQuantity, required this.discountPercent});
 
